@@ -49,10 +49,13 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     var referrer = document.referrer;
-    console.log('Referrer:', referrer);
+    console.log('Referrer: ', referrer);
 
     var userAgent = navigator.userAgent;
-    console.log('User Agent:', userAgent);
+    console.log('User Agent: ', userAgent);
+
+    var deviceType = getDeviceType();
+    console.log('Device Type: ', deviceType);
 
     var params = new URLSearchParams(window.location.search);
     var utmSource = params.get('utm_source');
